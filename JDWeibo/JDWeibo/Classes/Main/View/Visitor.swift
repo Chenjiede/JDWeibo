@@ -39,7 +39,7 @@ class Visitor: UIView {
         return Bundle.main.loadNibNamed("Visitor", owner: nil, options: nil)!.first as! Visitor
     }
     
-    func setupVisitorInfo(imageName : String? , title : String) {
+    func setupVisitorInfo(_ imageName : String? , title : String) {
         // 设置标题
         titleLabel.text = title
         
@@ -60,7 +60,7 @@ class Visitor: UIView {
         
     }
     
-    private func startAnimation() {
+    fileprivate func startAnimation() {
         // 创建动画
         let anim = CABasicAnimation(keyPath: "transform.rotation")
         

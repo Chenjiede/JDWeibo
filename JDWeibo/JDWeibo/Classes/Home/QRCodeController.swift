@@ -24,20 +24,20 @@ class QRCodeController: UIViewController {
     
     // MARK: - 懒加载
     /// 输入对象
-    private lazy var input : AVCaptureDeviceInput? = {
+    fileprivate lazy var input : AVCaptureDeviceInput? = {
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeAudio)
         
         return try? AVCaptureDeviceInput(device: device)
     }()
     
     /// 会话
-    private lazy var session : AVCaptureSession = AVCaptureSession()
+    fileprivate lazy var session : AVCaptureSession = AVCaptureSession()
     
     /// 输出对象
-    private lazy var output : AVCaptureMetadataOutput = AVCaptureMetadataOutput()
+    fileprivate lazy var output : AVCaptureMetadataOutput = AVCaptureMetadataOutput()
     
     /// 预览图层
-    private lazy var previewLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
+    fileprivate lazy var previewLayer : AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.session)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +68,7 @@ class QRCodeController: UIViewController {
     }
     
     // MARK: - 私有方法
-    private func scanQRCode() {
+    fileprivate func scanQRCode() {
         // 1. 判断输入能否添加到会话中
         if !session.canAddInput(input) {
             return
@@ -99,11 +99,11 @@ class QRCodeController: UIViewController {
     }
 
     // MARK: - 视图连线方法
-    @IBAction func openPhotos(sender: AnyObject) {
-        JDLog(message: "openPhotos")
+    @IBAction func openPhotos(_ sender: AnyObject) {
+        JDLog("openPhotos")
     }
-    @IBAction func closeClick(sender: AnyObject) {
-        JDLog(message: "closeClick")
+    @IBAction func closeClick(_ sender: AnyObject) {
+        JDLog("closeClick")
         
         dismiss(animated: true, completion: nil)
     }
@@ -126,7 +126,7 @@ extension QRCodeController : UITabBarDelegate {
 extension QRCodeController : AVCaptureMetadataOutputObjectsDelegate {
 
     /// 只要扫描到结果就会调用
-    private func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
-        JDLog(message: "123")
+    fileprivate func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+        JDLog("123")
     }
 }

@@ -17,7 +17,7 @@ class AnimationManager: NSObject, UIViewControllerTransitioningDelegate {
     /**
      负责返回设置弹出视图的相关属性的方法
      */
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         let pc = JDPresentationController(presentedViewController: presented, presenting: presenting)
         pc.presentFrame = presentFrame
         
@@ -27,7 +27,7 @@ class AnimationManager: NSObject, UIViewControllerTransitioningDelegate {
     /**
      返回展示视图处理的对象
      */
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         present = true
         return self
@@ -36,7 +36,7 @@ class AnimationManager: NSObject, UIViewControllerTransitioningDelegate {
     /**
      返回销毁视图处理的对象
      */
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         present = false
         return self
@@ -60,14 +60,14 @@ extension AnimationManager : UIViewControllerAnimatedTransitioning {
         
         if present { // 展示视图
             
-            showPopoverView(transitionContext: transitionContext)
+            showPopoverView(transitionContext)
         } else { // 销毁视图
-            dismissPopoverView(transitionContext: transitionContext)
+            dismissPopoverView(transitionContext)
         }
         
     }
     
-    private func showPopoverView(transitionContext: UIViewControllerContextTransitioning) {
+    fileprivate func showPopoverView(_ transitionContext: UIViewControllerContextTransitioning) {
         // 获取要跳转的View
         guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else {
             return
@@ -88,7 +88,7 @@ extension AnimationManager : UIViewControllerAnimatedTransitioning {
         }
     }
     
-    private func dismissPopoverView(transitionContext: UIViewControllerContextTransitioning) {
+    fileprivate func dismissPopoverView(_ transitionContext: UIViewControllerContextTransitioning) {
         // 获取要跳转的View
         guard let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from) else {
             return

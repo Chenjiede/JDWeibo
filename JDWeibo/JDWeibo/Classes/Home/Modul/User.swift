@@ -20,12 +20,13 @@ class User: NSObject {
     /// 认证类型 -1：没有认证，0，个人认证，2,3,5: 企业认证，220: 达人
     var verified_type: Int = -1
     
-    var access_token : String?
-    var uid : String?
-    
     init(dict : [String : AnyObject]) {
         super.init()
         self.setValuesForKeys(dict)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        
     }
     
     override var description : String {

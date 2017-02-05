@@ -10,19 +10,19 @@ import UIKit
 
 class MainController: UITabBarController {
     
-    private lazy var composeButton : UIButton = {
+    fileprivate lazy var composeButton : UIButton = {
 //        () -> UIButton in
         // 1. 创建按钮
         let button = UIButton(imageName: "tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
         
         // 2. 监听点击
-        button.addTarget(self, action: #selector(composeClick(button:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(composeClick(_:)), for: UIControlEvents.touchUpInside)
         
         return button
     }()
     
-    @objc private func composeClick(button : UIButton) {
-        JDLog(message: "composeClick")
+    @objc func composeClick(_ button : UIButton) {
+        JDLog("composeClick")
     }
  
     override func viewDidLoad() {

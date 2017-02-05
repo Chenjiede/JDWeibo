@@ -14,7 +14,25 @@ class Status: NSObject {
     var created_at: String?
     
     /// 来源
-    var source: String?
+    var source: String? {
+        didSet {
+            // 1.处理来源
+            // 1.1.安全校验
+            guard let temp = source, temp != "" else
+            {
+                return
+            }
+            // 1.2.找到开始的位置
+            let startIndex = (temp as NSString).range(of: ">").location + 1
+            
+            // 1.3.找到需要截取的字符串的长度
+            let length = (temp as NSString).range(of: "<", options: NSString.CompareOptions.backwards).location - startIndex
+            
+            // 1.4.截取字符串
+            let res = (temp as NSString).substring(with: NSMakeRange(startIndex, length))
+            source = "来自 " + res
+        }
+    }
     
     /// 字符串型的微博ID
     var idstr: String?
@@ -54,6 +72,10 @@ class Status: NSObject {
         }
         
         super.setValue(value, forKey: key)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        
     }
     
     override var description : String {

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026DC74603D0BAD9461EE3C4 /* Pods_JDWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEE1786D4A23A2164956C4F /* Pods_JDWeibo.framework */; };
+		742AF8F51DF9ABC600327D21 /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF8F41DF9ABC600327D21 /* WBCommon.swift */; };
 		7459FA8A1DF6FB5000AC9403 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA861DF6FB5000AC9403 /* DiscoverController.swift */; };
 		7459FA8B1DF6FB5000AC9403 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7459FA871DF6FB5000AC9403 /* Discover.storyboard */; };
 		7459FA9C1DF6FB7400AC9403 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA8E1DF6FB7400AC9403 /* HomeController.swift */; };
 		7459FA9D1DF6FB7400AC9403 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7459FA8F1DF6FB7400AC9403 /* Home.storyboard */; };
 		7459FA9E1DF6FB7400AC9403 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA911DF6FB7400AC9403 /* Status.swift */; };
-		7459FA9F1DF6FB7400AC9403 /* StatusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA921DF6FB7400AC9403 /* StatusFrame.swift */; };
+		7459FA9F1DF6FB7400AC9403 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA921DF6FB7400AC9403 /* StatusViewModel.swift */; };
 		7459FAA01DF6FB7400AC9403 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA931DF6FB7400AC9403 /* User.swift */; };
 		7459FAA11DF6FB7400AC9403 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA951DF6FB7400AC9403 /* AnimationManager.swift */; };
 		7459FAA21DF6FB7400AC9403 /* JDPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459FA961DF6FB7400AC9403 /* JDPresentationController.swift */; };
@@ -40,6 +42,14 @@
 		746F9B8E1DF5B954008454D3 /* NetworTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F9B8A1DF5B954008454D3 /* NetworTools.swift */; };
 		746F9B8F1DF5B954008454D3 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F9B8B1DF5B954008454D3 /* UIBarButtonItem+Extension.swift */; };
 		746F9B901DF5B954008454D3 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F9B8C1DF5B954008454D3 /* UIButton+Extension.swift */; };
+		748130851E1E88A900F09996 /* WBStatusViewModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748130841E1E88A900F09996 /* WBStatusViewModelList.swift */; };
+		748130871E1E8CD900F09996 /* WBCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748130861E1E8CD900F09996 /* WBCollectionView.swift */; };
+		7494D8241E42185400FA6871 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7494D8231E42185400FA6871 /* UIView+Extension.swift */; };
+		74C5E6261DFED12700E7C89D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E6251DFED12700E7C89D /* String+Extension.swift */; };
+		74DA4BC31E016DA300E4C9E8 /* WBCellKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA4BC21E016DA300E4C9E8 /* WBCellKey.swift */; };
+		74DA4BC81E0175D600E4C9E8 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA4BC61E0175D600E4C9E8 /* WBStatusCell.swift */; };
+		74DA4BC91E0175D600E4C9E8 /* WBStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA4BC71E0175D600E4C9E8 /* WBStatusCell.xib */; };
+		74DA4BCB1E0192FF00E4C9E8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA4BCA1E0192FF00E4C9E8 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,12 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		742AF8F41DF9ABC600327D21 /* WBCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCommon.swift; sourceTree = "<group>"; };
 		7459FA861DF6FB5000AC9403 /* DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		7459FA871DF6FB5000AC9403 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		7459FA8E1DF6FB7400AC9403 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7459FA8F1DF6FB7400AC9403 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		7459FA911DF6FB7400AC9403 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		7459FA921DF6FB7400AC9403 /* StatusFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusFrame.swift; sourceTree = "<group>"; };
+		7459FA921DF6FB7400AC9403 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		7459FA931DF6FB7400AC9403 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7459FA951DF6FB7400AC9403 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		7459FA961DF6FB7400AC9403 /* JDPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDPresentationController.swift; sourceTree = "<group>"; };
@@ -99,6 +110,17 @@
 		746F9B8A1DF5B954008454D3 /* NetworTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworTools.swift; sourceTree = "<group>"; };
 		746F9B8B1DF5B954008454D3 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		746F9B8C1DF5B954008454D3 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		748130841E1E88A900F09996 /* WBStatusViewModelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusViewModelList.swift; sourceTree = "<group>"; };
+		748130861E1E8CD900F09996 /* WBCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCollectionView.swift; sourceTree = "<group>"; };
+		7494D8231E42185400FA6871 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		74C5E6251DFED12700E7C89D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		74DA4BC21E016DA300E4C9E8 /* WBCellKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCellKey.swift; sourceTree = "<group>"; };
+		74DA4BC61E0175D600E4C9E8 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
+		74DA4BC71E0175D600E4C9E8 /* WBStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusCell.xib; sourceTree = "<group>"; };
+		74DA4BCA1E0192FF00E4C9E8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		BBEE1786D4A23A2164956C4F /* Pods_JDWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C081BA34CA1FAB0FB1D40FBD /* Pods-JDWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDWeibo/Pods-JDWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		ED183050AC354DBA7A0021C9 /* Pods-JDWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JDWeibo/Pods-JDWeibo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026DC74603D0BAD9461EE3C4 /* Pods_JDWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +149,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ABFD9A123BEEFE2565BC973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBEE1786D4A23A2164956C4F /* Pods_JDWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		742AF8F31DF9AB7100327D21 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				742AF8F41DF9ABC600327D21 /* WBCommon.swift */,
+				74DA4BC21E016DA300E4C9E8 /* WBCellKey.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		7459FA841DF6FB5000AC9403 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				7459FA911DF6FB7400AC9403 /* Status.swift */,
-				7459FA921DF6FB7400AC9403 /* StatusFrame.swift */,
+				7459FA921DF6FB7400AC9403 /* StatusViewModel.swift */,
 				7459FA931DF6FB7400AC9403 /* User.swift */,
+				748130841E1E88A900F09996 /* WBStatusViewModelList.swift */,
 			);
 			path = Modul;
 			sourceTree = "<group>";
@@ -205,6 +246,9 @@
 			isa = PBXGroup;
 			children = (
 				7459FA9B1DF6FB7400AC9403 /* TitleButton.swift */,
+				74DA4BC61E0175D600E4C9E8 /* WBStatusCell.swift */,
+				74DA4BC71E0175D600E4C9E8 /* WBStatusCell.xib */,
+				748130861E1E8CD900F09996 /* WBCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +334,8 @@
 				746F9B5C1DF5B585008454D3 /* JDWeiboTests */,
 				746F9B671DF5B585008454D3 /* JDWeiboUITests */,
 				746F9B461DF5B584008454D3 /* Products */,
+				B39D7CD68396916A7430BBFC /* Pods */,
+				4ABFD9A123BEEFE2565BC973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,6 +382,8 @@
 		746F9B761DF5B782008454D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				74C5E6241DFED10A00E7C89D /* Category */,
+				742AF8F31DF9AB7100327D21 /* Other */,
 				7459FAB71DF6FE4000AC9403 /* OAuth */,
 				7459FAAF1DF6FD7000AC9403 /* Profile */,
 				7459FAA71DF6FD2100AC9403 /* Message */,
@@ -395,6 +443,25 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		74C5E6241DFED10A00E7C89D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				74C5E6251DFED12700E7C89D /* String+Extension.swift */,
+				74DA4BCA1E0192FF00E4C9E8 /* Date+Extension.swift */,
+				7494D8231E42185400FA6871 /* UIView+Extension.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B39D7CD68396916A7430BBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C081BA34CA1FAB0FB1D40FBD /* Pods-JDWeibo.debug.xcconfig */,
+				ED183050AC354DBA7A0021C9 /* Pods-JDWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,9 +469,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 746F9B6D1DF5B585008454D3 /* Build configuration list for PBXNativeTarget "JDWeibo" */;
 			buildPhases = (
+				DB286ECAE8133E9FBC592FFF /* [CP] Check Pods Manifest.lock */,
 				746F9B411DF5B584008454D3 /* Sources */,
 				746F9B421DF5B584008454D3 /* Frameworks */,
 				746F9B431DF5B584008454D3 /* Resources */,
+				24D92E2B92941455938102A4 /* [CP] Embed Pods Frameworks */,
+				4E10AAC224E94C92A147F842 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -465,17 +535,20 @@
 					746F9B441DF5B584008454D3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = T22BDAU438;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					746F9B581DF5B585008454D3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = T22BDAU438;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 746F9B441DF5B584008454D3;
 					};
 					746F9B631DF5B585008454D3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = T22BDAU438;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 746F9B441DF5B584008454D3;
 					};
@@ -512,6 +585,7 @@
 				7459FAAE1DF6FD2100AC9403 /* Message.storyboard in Resources */,
 				746F9B871DF5B7E9008454D3 /* Visitor.xib in Resources */,
 				746F9B841DF5B7E9008454D3 /* Main.storyboard in Resources */,
+				74DA4BC91E0175D600E4C9E8 /* WBStatusCell.xib in Resources */,
 				746F9B851DF5B7E9008454D3 /* nofile.storyboard in Resources */,
 				7459FAA31DF6FB7400AC9403 /* Popover.storyboard in Resources */,
 				746F9B531DF5B584008454D3 /* LaunchScreen.storyboard in Resources */,
@@ -536,13 +610,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24D92E2B92941455938102A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDWeibo/Pods-JDWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E10AAC224E94C92A147F842 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDWeibo/Pods-JDWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB286ECAE8133E9FBC592FFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		746F9B411DF5B584008454D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DA4BCB1E0192FF00E4C9E8 /* Date+Extension.swift in Sources */,
 				7459FAA01DF6FB7400AC9403 /* User.swift in Sources */,
 				7459FAAD1DF6FD2100AC9403 /* MessageController.swift in Sources */,
+				74DA4BC81E0175D600E4C9E8 /* WBStatusCell.swift in Sources */,
 				7459FAB51DF6FD7000AC9403 /* ProfileController.swift in Sources */,
 				746F9B861DF5B7E9008454D3 /* Visitor.swift in Sources */,
 				7459FAB91DF6FE4800AC9403 /* UserAccount.swift in Sources */,
@@ -553,12 +677,18 @@
 				7459FAA11DF6FB7400AC9403 /* AnimationManager.swift in Sources */,
 				746F9B8F1DF5B954008454D3 /* UIBarButtonItem+Extension.swift in Sources */,
 				7459FA9E1DF6FB7400AC9403 /* Status.swift in Sources */,
+				74C5E6261DFED12700E7C89D /* String+Extension.swift in Sources */,
+				748130851E1E88A900F09996 /* WBStatusViewModelList.swift in Sources */,
 				7459FA9C1DF6FB7400AC9403 /* HomeController.swift in Sources */,
 				7459FAA61DF6FB7400AC9403 /* TitleButton.swift in Sources */,
 				746F9B831DF5B7E9008454D3 /* MainController.swift in Sources */,
-				7459FA9F1DF6FB7400AC9403 /* StatusFrame.swift in Sources */,
+				7459FA9F1DF6FB7400AC9403 /* StatusViewModel.swift in Sources */,
 				7459FA8A1DF6FB5000AC9403 /* DiscoverController.swift in Sources */,
+				748130871E1E8CD900F09996 /* WBCollectionView.swift in Sources */,
+				7494D8241E42185400FA6871 /* UIView+Extension.swift in Sources */,
+				742AF8F51DF9ABC600327D21 /* WBCommon.swift in Sources */,
 				746F9B901DF5B954008454D3 /* UIButton+Extension.swift in Sources */,
+				74DA4BC31E016DA300E4C9E8 /* WBCellKey.swift in Sources */,
 				746F9B8E1DF5B954008454D3 /* NetworTools.swift in Sources */,
 				746F9B491DF5B584008454D3 /* AppDelegate.swift in Sources */,
 			);
@@ -700,10 +830,12 @@
 		};
 		746F9B6E1DF5B585008454D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C081BA34CA1FAB0FB1D40FBD /* Pods-JDWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T22BDAU438;
 				INFOPLIST_FILE = JDWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chen.JDWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,10 +845,12 @@
 		};
 		746F9B6F1DF5B585008454D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED183050AC354DBA7A0021C9 /* Pods-JDWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T22BDAU438;
 				INFOPLIST_FILE = JDWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chen.JDWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

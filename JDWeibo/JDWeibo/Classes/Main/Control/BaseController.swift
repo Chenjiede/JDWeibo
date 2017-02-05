@@ -24,7 +24,7 @@ class BaseController: UITableViewController {
     /**
      创建访客视图
      */
-    private func setupVisitorView() {
+    fileprivate func setupVisitorView() {
         // 1. 创建访客视图
         visitorView = Visitor.visitorView()
         view = visitorView
@@ -42,14 +42,14 @@ class BaseController: UITableViewController {
     /**
      注册按钮点击监听
      */
-    @objc private func registerClick() {
-        JDLog(message: "registerClick");
+    @objc fileprivate func registerClick() {
+        JDLog("registerClick");
     }
     
     /**
      登陆按钮点击监听
      */
-    @objc private func loginClick() {
-        JDLog(message: "loginClick");
+    @objc fileprivate func loginClick() {
+        JDLog("loginClick");
     }
 }

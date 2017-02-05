@@ -15,7 +15,7 @@ class MessageController: BaseController {
 
         // 判断是否登陆
         if !isLogin { // 还没有登陆
-            visitorView?.setupVisitorInfo(imageName: "visitordiscover_image_message" , title: "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知")
+            visitorView?.setupVisitorInfo("visitordiscover_image_message" , title: "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知")
         }
     }
 

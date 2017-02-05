@@ -43,12 +43,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-func JDLog<T>(message : T, filename : String = #file, methodname : String = #function, linenumber : Int = #line) {
-    
-    #if DEBUG
-        let file = (filename as NSString).pathComponents.last!.components(separatedBy: ".").first!
-        print("\(file).\(methodname)[\(linenumber)]")
-        print(message)
-        
-    #endif
-}

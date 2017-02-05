@@ -23,7 +23,7 @@ class JDPresentationController: UIPresentationController {
         containerView?.insertSubview(coverButton, at: 0)
     }
     
-    @objc private func coverBtnClick() {
+    @objc fileprivate func coverBtnClick() {
         
 //        NSNotification.Name.UIKeyboardDidHide
         

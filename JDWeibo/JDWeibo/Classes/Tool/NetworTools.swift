@@ -7,17 +7,18 @@
 //
 
 import Foundation
-//import AFNetworking
-/*
+import AFNetworking
+
 class NetworTools: AFHTTPSessionManager {
     
     static let shareInstance : NetworTools = {
-        let url = NSURL(string: "https://api.weibo.com/")
-        
-        let instance = NetworTools(baseURL: url, sessionConfiguration: NSURLSessionConfiguration.defaultSessionConfiguration())
-//        instance.responseSerializer.acceptableContentTypes = NSSet(objects: "application/json", "text/json", "text/javascript", "text/plain") as Set<NSObject>
+        let url = URL(string: "https://api.weibo.com/")
+
+        let instance = NetworTools(baseURL: url, sessionConfiguration: .default)
+        instance.responseSerializer.acceptableContentTypes = NSSet(objects: "application/json", "text/json", "text/javascript", "text/plain") as? Set
         
         return instance
     }()
+    
 }
-*/
+

@@ -15,7 +15,7 @@ class DiscoverController: BaseController {
 
         // 判断是否登陆
         if !isLogin { // 还没有登陆
-            visitorView?.setupVisitorInfo(imageName: "visitordiscover_image_message" , title: "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过")
+            visitorView?.setupVisitorInfo("visitordiscover_image_message" , title: "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过")
         }
 
     }

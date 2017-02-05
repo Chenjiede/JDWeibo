@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 class HttpTools: NSObject {
     
-    class func sessionGET(urlStr : String, success:@escaping (Data) ->Void, failure:@escaping (Error) ->Void) {
+    class func sessionGET(_ urlStr : String, success: @escaping (Data) ->Void, failure: @escaping (Error) ->Void) {
+        
         let session = URLSession.shared
         
         guard let url = URL(string: urlStr) else { return }
@@ -18,7 +20,7 @@ class HttpTools: NSObject {
         let task = session.dataTask(with: request) { (data, response, error) -> Void in
             
             if (error != nil) {
-                JDLog(message: "error")
+                JDLog("error")
                 failure(error!)
             } else {
                 guard let dataStr = data else { return }
